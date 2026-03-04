@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,24 @@
   <title>Iron Beast Gym | Transforma tu cuerpo</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-  <header class="hero">
+<body>
+  <nav class="navbar">
+    <div class="container nav-flex">
+      <a href="#inicio" class="logo">IRON<span>BEAST</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#planes">Planes</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
     <div class="container">
       <h1 id="gym-name">IRON BEAST GYM</h1>
       <p id="hero-title">Transforma tu cuerpo. Eleva tu disciplina en el mejor ambiente de Guayaquil.</p>
@@ -18,22 +34,22 @@
     </div>
   </header>
 
-  <section class="features">
+  <section id="servicios" class="features">
     <div class="container">
       <h2>Nuestros Servicios</h2>
       <div class="features-grid">
         <div class="feature">
-          <i class="fas fa-dumbbell" style="color: #e10600; font-size: 2rem; margin-bottom: 1rem;"></i>
+          <i class="fas fa-dumbbell icon-red"></i>
           <h3>Pesas</h3>
           <p>Área de musculación completa con máquinas de última generación.</p>
         </div>
         <div class="feature">
-          <i class="fas fa-users" style="color: #e10600; font-size: 2rem; margin-bottom: 1rem;"></i>
+          <i class="fas fa-users icon-red"></i>
           <h3>Clases Grupales</h3>
           <p>Crossfit, Zumba y Yoga dirigidos por expertos certificados.</p>
         </div>
         <div class="feature">
-          <i class="fas fa-bolt" style="color: #e10600; font-size: 2rem; margin-bottom: 1rem;"></i>
+          <i class="fas fa-bolt icon-red"></i>
           <h3>Funcional</h3>
           <p>Entrenamiento de alta intensidad para mejorar tu movilidad y fuerza.</p>
         </div>
@@ -41,21 +57,48 @@
     </div>
   </section>
 
-  <section class="benefits">
+  <section id="nosotros" class="benefits">
     <div class="container">
       <h2>¿Por qué elegirnos?</h2>
       <div class="features-grid">
-        <div class="feature" style="background: transparent; border: 1px solid #333;">
-          <h3 style="color: #e10600;">+10</h3>
+        <div class="feature stat-box">
+          <h3 class="stat-number">+10</h3>
           <p>Entrenadores Certificados</p>
         </div>
-        <div class="feature" style="background: transparent; border: 1px solid #333;">
-          <h3 style="color: #e10600;">24/7</h3>
+        <div class="feature stat-box">
+          <h3 class="stat-number">24/7</h3>
           <p>Equipamiento Profesional</p>
         </div>
-        <div class="feature" style="background: transparent; border: 1px solid #333;">
-          <h3 style="color: #e10600;">100%</h3>
+        <div class="feature stat-box">
+          <h3 class="stat-number">100%</h3>
           <p>Ambiente Disciplinado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planes" class="pricing">
+    <div class="container">
+      <h2>Planes de Entrenamiento</h2>
+      <div class="features-grid">
+        <div class="feature pricing-card">
+          <h3>Básico</h3>
+          <p class="price">$25<span>/mes</span></p>
+          <ul class="plan-list">
+            <li>Acceso a Pesas</li>
+            <li>Vestidores</li>
+          </ul>
+          <a href="#contacto" class="btn btn-small">Elegir Plan</a>
+        </div>
+        <div class="feature pricing-card featured-plan">
+          <span class="badge">Popular</span>
+          <h3>VIP</h3>
+          <p class="price">$45<span>/mes</span></p>
+          <ul class="plan-list">
+            <li>Pesas + Clases</li>
+            <li>Entrenador Personal</li>
+          </ul>
+          <a href="#contacto" class="btn btn-small">Elegir Plan</a>
         </div>
       </div>
     </div>
@@ -64,16 +107,37 @@
   <section id="contacto" class="cta">
     <div class="container">
       <h2>Encuéntranos</h2>
-      <p style="margin-bottom: 2rem;">Visítanos y obtén una clase de cortesía.</p>
+      <p>Visítanos y obtén una clase de cortesía.</p>
       <a id="whatsapp-btn-2" class="btn">Chatea con nosotros</a>
     </div>
   </section>
 
-  <a href="https://wa.me/TUNUMERO" class="whatsapp-float" target="_blank">
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-logo">
+        <a href="#inicio" class="logo">IRON<span>BEAST</span></a>
+        <p>Disciplina y fuerza en el corazón de Guayaquil.</p>
+      </div>
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Iron Beast Gym. Diseñado por Carrillo Paz.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float" id="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
