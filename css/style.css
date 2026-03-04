@@ -8,7 +8,8 @@
 }
 
 body {
-  background: #0a0a0a; /* Un negro un poco más profundo */
+  background: #0a0a0a;
+  /* Un negro un poco más profundo */
   color: #ffffff;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
@@ -17,7 +18,8 @@ body {
 
 /* 2. Estructura de Secciones */
 section {
-  padding: 120px 0; /* Más aire entre secciones */
+  padding: 120px 0;
+  /* Más aire entre secciones */
 }
 
 .container {
@@ -28,7 +30,8 @@ section {
 
 /* 3. Tipografía con Jerarquía */
 h1 {
-  font-size: clamp(3rem, 8vw, 5rem); /* Se ajusta solo al tamaño de pantalla */
+  font-size: clamp(3rem, 8vw, 5rem);
+  /* Se ajusta solo al tamaño de pantalla */
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   line-height: 1;
@@ -44,7 +47,8 @@ h2 {
   letter-spacing: 2px;
 }
 
-h2::after { /* Detalle visual: línea roja bajo el título */
+h2::after {
+  /* Detalle visual: línea roja bajo el título */
   content: '';
   display: block;
   width: 60px;
@@ -59,9 +63,10 @@ h2::after { /* Detalle visual: línea roja bajo el título */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Centrado para que se vea más moderno */
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), 
-              url('../assets/img/gym-bg.jpg') center/cover no-repeat;
+  text-align: center;
+  /* Centrado para que se vea más moderno */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
+    url('../assets/img/gym-bg.jpg') center/cover no-repeat;
 }
 
 .hero .container {
@@ -78,7 +83,8 @@ h2::after { /* Detalle visual: línea roja bajo el título */
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 2px; /* Menos redondeado para verse más "rudo" */
+  border-radius: 2px;
+  /* Menos redondeado para verse más "rudo" */
   transition: all 0.4s ease;
   border: 2px solid transparent;
 }
@@ -86,7 +92,8 @@ h2::after { /* Detalle visual: línea roja bajo el título */
 .btn:hover {
   background: transparent;
   border-color: #e10600;
-  transform: translateY(-5px); /* Pequeño salto al pasar el mouse */
+  transform: translateY(-5px);
+  /* Pequeño salto al pasar el mouse */
   box-shadow: 0 10px 20px rgba(225, 6, 0, 0.3);
 }
 
@@ -129,21 +136,26 @@ h2::after { /* Detalle visual: línea roja bajo el título */
 /* Ajustes para Tablets y Laptops pequeñas */
 @media (max-width: 1024px) {
   h1 {
-    font-size: 3.5rem; /* El título se encoge un poco */
+    font-size: 3.5rem;
+    /* El título se encoge un poco */
   }
+
   .container {
-    width: 92%; /* Más espacio en los bordes para tablets */
+    width: 92%;
+    /* Más espacio en los bordes para tablets */
   }
 }
 
 /* Ajustes críticos para Celulares (iPhone, Android) */
 @media (max-width: 768px) {
   section {
-    padding: 60px 0; /* Menos espacio vertical para no hacer tanto scroll */
+    padding: 60px 0;
+    /* Menos espacio vertical para no hacer tanto scroll */
   }
 
   h1 {
-    font-size: 2.8rem; /* Título legible pero que no rompa el diseño */
+    font-size: 2.8rem;
+    /* Título legible pero que no rompa el diseño */
     text-align: center;
   }
 
@@ -153,16 +165,19 @@ h2::after { /* Detalle visual: línea roja bajo el título */
   }
 
   .hero {
-    text-align: center; /* Centramos todo en el móvil para mejor estética */
+    text-align: center;
+    /* Centramos todo en el móvil para mejor estética */
   }
 
   .features-grid {
-    grid-template-columns: 1fr; /* ¡IMPORTANTE! Las 3 columnas pasan a ser 1 sola */
+    grid-template-columns: 1fr;
+    /* ¡IMPORTANTE! Las 3 columnas pasan a ser 1 sola */
     gap: 20px;
   }
 
   .btn {
-    width: 100%; /* El botón ocupa todo el ancho, más fácil de tocar con el pulgar */
+    width: 100%;
+    /* El botón ocupa todo el ancho, más fácil de tocar con el pulgar */
     text-align: center;
     padding: 15px 20px;
   }
